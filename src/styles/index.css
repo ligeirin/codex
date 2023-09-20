@@ -1,21 +1,56 @@
 * {
 	font-family: "Roboto", sans-serif;
+	box-sizing: border-box;
 }
 
 body {
 	padding: 0;
 	margin: 0;
 
-	background-color: rgb(225, 225, 225);
+	background-color: rgb(245, 245, 245);
+}
+
+.nav {
+	height: 120px;
+	background-color: rgb(255, 255, 255);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 100vw;
+	box-sizing: content-box;
+
+	margin-bottom: 24px;
+}
+
+.nav p{
+	margin: 0;
+	padding: 0;
+	display: block;
+	text-align: center;
+	width: 100%;
+
+	font-size: 36px;
+	font-weight: 600;
+}
+
+.nav, .entries-wrapper, .filter-wrapper {
+	box-shadow: 0 0 16px 0px rgba(0, 0, 0, .1);
 }
 
 .container {
-	width: 94vw;
+	width: 64vw;
 	margin: auto;
 }
 
+.entries-container {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 24px;
+}
+
 .entries-wrapper {
-	width: 55vw;
+	/* width: 55vw; */
 
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -26,6 +61,8 @@ body {
 	padding: 30px;
 
 	background-color: rgb(255, 255, 255);
+	
+	border-radius: 24px;
 }
 
 .entry {
@@ -85,4 +122,49 @@ body {
 
 	color: rgb(255, 255, 255);
 	font-weight: 500;
+}
+
+.filter-wrapper{
+	border-radius: 24px;
+
+	height: fit-content;
+
+	display: flex;
+	flex-direction: column;
+
+	padding: 30px;
+	gap: 30px;
+
+	background-color: white;
+}
+
+.filter-field{
+	font-size: 16px;
+
+	padding: 6px 12px;
+	border-radius: 6px;
+
+	border: 1px solid rgb(182, 182, 182);
+	outline: none;
+}
+
+.filter-btn{
+	background-color: rgb(51,51,51);
+	color: white;
+	font-weight: 500;
+	cursor: pointer;
+	box-sizing: border-box;
+
+	outline: 0px solid rgb(182, 182, 182);
+
+	transition: all .1s ease-in-out;
+}
+
+.filter-btn:hover{
+	background-color: rgb(255,255,255);
+	color: rgb(51,51,51);
+}
+
+.filter-btn:active{
+	outline: 2px solid rgb(51,51,51);
 }
