@@ -1,7 +1,12 @@
 let TAGS = [
-	{ name: "HTML", icon: "AAAA", color: "#f06529" },
-	{ name: "JavaScript", icon: "BBBB", color: "#feca3f" },
-	{ name: "CSS", icon: "CCCC", color: "#0074be" },
+	{ name: "HTML", icon: "#", color: "#f06529" },
+	{ name: "JavaScript", icon: "#", color: "#feca3f" },
+	{ name: "CSS", icon: "#", color: "#0074be" },
+	{ name: "Angular", icon: "#", color: "#ff0000"},
+	{ name: "TypeScript", icon: "#", color: "#ff0000"},
+	{ name: "NodeJS", icon: "#", color: "#ff0000"},
+	{ name: "Java", icon: "#", color: "#ff0000"},
+	{ name: "C++", icon: "#", color: "#ff0000"},
 ];
 
 let ENTRIES = [
@@ -19,7 +24,35 @@ let ENTRIES = [
 			"Lorem ipsum dolor sit amet Etiam tempor efficitur ornare. Donec non pretium magna, in aliquet sapien. Sed eleifend sapien quis leo ultrices fermentum.",
 		path: "src/entries/test2.html",
 	},
+	{
+		name: "TESTE 3",
+		tags: [6],
+		description:
+			"Lorem ipsum dolor sit amet Etiam tempor efficitur ornare. Donec non pretium magna, in aliquet sapien. Sed eleifend sapien quis leo ultrices fermentum.",
+		path: "src/entries/test2.html",
+	},
+	{
+		name: "TESTE 4",
+		tags: [4],
+		description:
+			"Lorem ipsum dolor sit amet Etiam tempor efficitur ornare. Donec non pretium magna, in aliquet sapien. Sed eleifend sapien quis leo ultrices fermentum.",
+		path: "src/entries/test2.html",
+	},
+	{
+		name: "TESTE 5",
+		tags: [3],
+		description:
+			"Lorem ipsum dolor sit amet Etiam tempor efficitur ornare. Donec non pretium magna, in aliquet sapien. Sed eleifend sapien quis leo ultrices fermentum.",
+		path: "src/entries/test2.html",
+	},
+	{
+		name: "TESTE 6",
+		tags: [0, 1, 2, 3, 4, 5, 6, 7],
+		description:
+			"Lorem ipsum dolor sit amet Etiam tempor efficitur ornare. Donec non pretium magna, in aliquet sapien. Sed eleifend sapien quis leo ultrices fermentum.",
+		path: "src/entries/test2.html",
+	},
 ];
 
 ENTRIES = [].concat(ENTRIES, ENTRIES);
-ENTRIES = [].concat(ENTRIES, ENTRIES);
+// ENTRIES = [].concat(ENTRIES, ENTRIES);
