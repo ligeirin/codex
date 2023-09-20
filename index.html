@@ -13,17 +13,28 @@
 		<link rel="stylesheet" href="src/styles/index.css" />
 	</head>
 	<body onload="init()">
-		<div class="container">
-			<div id="entriesDiv" class="entries-wrapper"></div>
+		<div class="nav">
+			<div class="container">
+				<p>LIGEIRIN</p>
+			</div>
 		</div>
 
-		<!-- <script
+		<div class="container entries-container">
+			<div id="entriesDiv" class="entries-wrapper"></div>
+			<div id="filterDiv" class="filter-wrapper">
+				<input type="text" class="filter-field filter-input" name="titleFilter" id="titleFilterInput" placeholder="Title">
+				<input type="text" class="filter-field  filter-input" name="tagFilter" id="tagFilterInput" placeholder="Tags (foo,bar,...)" >
+				<button class="filter-field filter-btn" onclick="filterEntries()">FILTER</button>
+			</div>
+		</div>
+
+		<script
 			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
 			integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
-		></script> -->
-		<script src="src/libs/jquery-3.7.1.min.js"></script>
+		></script>
+		<!-- <script src="src/libs/jquery-3.7.1.min.js"></script> -->
 		<script src="src/json/data.js"></script>
 		<script src="src/scripts/index.js"></script>
 	</body>
